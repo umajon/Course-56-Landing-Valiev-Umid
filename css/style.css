@@ -179,13 +179,12 @@ div.courseDetails {
     width: 477px;
 
 }
-
 .saleContainer {
     background-color: #6E3ABA;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: calc(4.4vw +23 px) 0 calc(5.3w +20px);
+    padding: calc(4.4vw + 23px) 0 calc(5.3w + 20px);
 }
 .saleContainer h3 {
     color: white;
@@ -197,7 +196,7 @@ div.courseDetails {
     gap: 85px;
     margin-bottom: calc(4vw + 6px);
 }
-.date {
+.date, .date2 {
     font-size: calc(12.6vw + 12.8px);
     font-family: "chava", sans-serif;
 }
@@ -206,3 +205,30 @@ div.courseDetails {
     display: block;
     text-align: center;
 }
+
+.promises h3{
+    font-size: calc(2vw + 24px);
+    margin: 0 138px 90px 120px;
+    text-align: left;
+    text-transform: uppercase;
+    line-height: calc(3.1vw + 28.26px);
+    font-weight: 500;
+}
+
+.studyProcess {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 90px 120px;
+    justify-content: center;
+}
+
+.processInfo {
+    max-width: 500px;
+    min-width: 328px;
+    text-align: left;
+    margin-bottom: calc(0.6vw + 5.13px);
+    font-size: calc(0.1vw + 14.27px);
+    
+}
+
+
