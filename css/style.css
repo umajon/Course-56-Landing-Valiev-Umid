@@ -77,14 +77,14 @@ button.purple {
     border: 1px solid #6E3ABA;
 }
 
-button.white {
+button.white .saleBtn {
     background: white;
     color: #6E3ABA;
     border: 1px solid #6E3ABA;
 
 }
 
-h2 {
+.courseDetails h2 {
 
     width: 100%;
     /* Убираем фиксированную ширину */
@@ -178,4 +178,31 @@ div.courseDetails {
 .wtsvalue {
     width: 477px;
 
+}
+
+.saleContainer {
+    background-color: #6E3ABA;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: calc(4.4vw +23 px) 0 calc(5.3w +20px);
+}
+.saleContainer h3 {
+    color: white;
+    font-size: calc(2vw + 26.5px);
+    margin-bottom: calc(4.1vw + 4.7px);
+}
+.time {
+    display: flex;
+    gap: 85px;
+    margin-bottom: calc(4vw + 6px);
+}
+.date {
+    font-size: calc(12.6vw + 12.8px);
+    font-family: "chava", sans-serif;
+}
+.timeCard span {
+    font-size: calc(1.9vw + 3px);
+    display: block;
+    text-align: center;
 }
