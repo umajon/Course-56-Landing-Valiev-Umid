@@ -1,3 +1,4 @@
+
 * {
     padding: 0;
     margin: 0;
@@ -84,107 +85,61 @@ button.white .saleBtn {
 
 }
 
-.courseDetails h2 {
-
-    width: 100%;
-    /* Убираем фиксированную ширину */
-    max-width: 900px;
-    /* Максимальная ширина для больших экранов */
+.aboutStudy h2 {
+    width: calc(46.3vw + 176px);
     height: auto;
-    /* Убираем фиксированную высоту */
-    min-width: 300px;
-    font-size: calc(34px + (58 - 34) * ((100vw - 375px) / (1280 - 375)));
+    margin-top: calc(10.5vw + 25.54px) ;
+    margin-right: calc(38.6vw + 103.11px);
+    margin-bottom: calc(5.3vw + 22.77px);
     line-height: 117%;
-    margin: 160px 150px 0 80px;
+    font-size: calc(2.5vw + 25.73px);
     font-weight: 600;
 }
-section.aboutStudy {
-    max-width: 1280px;
-    max-height: 1252;
-}
-
-div.courseDetails {
-    display: flex;
-    flex-wrap: wrap;
-    width: auto;
-    gap: 40px;
-    margin-top: calc(40px + (90 - 40) * ((100vw - 375px) / (1280 - 375)));
-    margin-bottom: calc(40px + (90 - 40) * ((100vw - 375px) / (1280 - 375)));
-
-    }
 
 .aboutStudy img {
-    padding-left: 40px;
+    width: calc(3.2vw + 169.66px);
 }
 
-.btitle,
-.stitle,
-.betitle,
-.wtstitle {
-    padding-left: 20px;
-    font: bold;
-    color: #222222;
-    font-size: calc(18px + (27 - 18) * ((100vw - 375px) / (1280 - 375)));
-    line-height: 140%;
-    font-weight: 600;
-}
+.courseDetails {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(5.3vw + 22.73px);
+    margin-bottom: calc(1.3vw + 35.86px);
+    }
 
-.btitle {
-    width: 420px;
-    height: 38px;
-}
-
-.stitle {
-    width: 369px;
-    height: 38px;
-}
-
-.betitle {
-    width: 318px;
-    height: 76px;
-}
-
-.wtstitle {
-    width: 434px;
-    height: 76px;
-}
+    .btitle,
+    .stitle,
+    .betitle,
+    .wtstitle {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        color: #222222;
+        width: calc(10.5vw + 285.54px);
+        font-size: calc(0.9vw + 14.89px);
+        line-height: 140%;
+        font-weight: 600;
+        margin-bottom: calc(1.1vw + 6.55px);
+       
+    }
 
 .bvalue,
 .svalue,
 .bevalue,
 .wtsvalue {
-    margin: 20px;
-    padding: 20px;
-    font-size: calc(18px + (27 - 18) * ((100vw - 375px) / (1280 - 375)));
+    width: calc(12vw + 285.96px);
+    font-size: calc(0.9vw + 14.89px);
     font-weight: 400;
     line-height: 117%;
+    text-align: left;
 }
 
-.bvalue {
-    width: 450px;
-
-}
-
-.svalue {
-    width: 450px;
-
-}
-
-.bevalue {
-    width: 432px;
-
-}
-
-.wtsvalue {
-    width: 477px;
-
-}
 .saleContainer {
     background-color: #6E3ABA;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: calc(4.4vw + 23px) 0 calc(5.3w + 20px);
+    padding: calc(4.4vw + 23px) 0 calc(5.3vw + 20px);
 }
 .saleContainer h3 {
     color: white;
@@ -193,7 +148,7 @@ div.courseDetails {
 }
 .time {
     display: flex;
-    gap: 85px;
+    gap: calc(2vw + 2px);
     margin-bottom: calc(4vw + 6px);
 }
 .date, .date2 {
@@ -201,25 +156,25 @@ div.courseDetails {
     font-family: "chava", sans-serif;
 }
 .timeCard span {
-    font-size: calc(1.9vw + 3px);
-    display: block;
     text-align: center;
+    display: block;
+    font-size: calc(1.9vw + 2.8px);
 }
 
 .promises h3{
+    width: calc(72.9vw + 88.89px);
     font-size: calc(2vw + 24px);
-    margin: 0 138px 90px 120px;
     text-align: left;
     text-transform: uppercase;
     line-height: calc(3.1vw + 28.26px);
-    font-weight: 500;
+    font-weight: 500;  
+    margin-right: (12vw + 15.95px);
 }
-
 .studyProcess {
     display: flex;
     flex-wrap: wrap;
-    gap: 90px 120px;
-    justify-content: center;
+    gap: calc(3vw + 9.32px);
+    justify-content: left;
 }
 
 .processInfo {
@@ -227,8 +182,7 @@ div.courseDetails {
     min-width: 328px;
     text-align: left;
     margin-bottom: calc(0.6vw + 5.13px);
-    font-size: calc(0.1vw + 14.27px);
-    
+    font-size: calc(0.9vw + 14.27px);
 }
 
 
