@@ -11,6 +11,7 @@ body {
 
 section {
     padding: 0 calc(24px + (121 - 24) * ((100vw - 375px) / (1280 - 375)));
+    margin-bottom: 0 calc(60px + (160 - 60) * ((100vw - 375px) / (1280 - 375)));;
 }
 
 section.hello {
@@ -85,7 +86,7 @@ button.white .saleBtn {
 
 }
 
-.aboutStudy h2 {
+h2 {
     width: calc(46.3vw + 176px);
     height: auto;
     margin-top: calc(10.5vw + 25.54px) ;
@@ -182,7 +183,50 @@ button.white .saleBtn {
     min-width: 328px;
     text-align: left;
     margin-bottom: calc(0.6vw + 5.13px);
-    font-size: calc(0.9vw + 14.27px);
+    font-size: calc(1vw + 14.27px);
 }
 
+.infoContainer {
+    display: flex;
+    gap: calc(20px + (51 - 20) * ((100vw - 375px) / (1280 - 375)));;
+    flex-wrap: wrap;
+}
 
+.infoCard {
+    flex-basis: 250px;
+    flex-grow: 1;
+}
+
+.infoCard img {
+width: 100%;
+}
+
+.infoBox {
+    flex-basis: 300px;
+    flex-grow:3;
+}
+
+h4 {
+    font-size: calc(38px + (48 - 38) * ((100vw - 375px) / (1280 - 375)));
+    font-weight: 700;
+    line-height: 120%;
+}
+
+.legendSkill {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: calc(30px + (40 - 30) * ((100vw - 375px) / (1280 - 375)));
+    column-gap: calc(10px + (90 - 10) * ((100vw - 375px) / (1280 - 375)));
+    margin-top: calc(40px + (90 - 40) * ((100vw - 375px) / (1280 - 375)));
+}
+
+.skill img {
+    width: 36px;
+}
+
+.skill span {
+    display: block;
+    margin-top: 10px;
+    font-size: calc(16px + (21 - 16) * ((100vw - 375px) / (1280 - 375)));
+    line-height: 140%;
+}
