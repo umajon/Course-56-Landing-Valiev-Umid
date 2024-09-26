@@ -1,4 +1,3 @@
-
 * {
     padding: 0;
     margin: 0;
@@ -11,7 +10,8 @@ body {
 
 section {
     padding: 0 calc(24px + (121 - 24) * ((100vw - 375px) / (1280 - 375)));
-    margin-bottom: 0 calc(60px + (160 - 60) * ((100vw - 375px) / (1280 - 375)));;
+    margin-bottom: 0 calc(60px + (160 - 60) * ((100vw - 375px) / (1280 - 375)));
+    ;
 }
 
 section.hello {
@@ -86,15 +86,20 @@ button.white .saleBtn {
 
 }
 
-h2 {
-    width: calc(46.3vw + 176px);
+.aboutStudy {
+    margin-top: calc(11vw + 18.56px);
+}
+
+ .aboutStudy h2, .promises h2, .legendContainer h2, .salaryInfo h2, .partners h2 {
+   /* width: calc(48.7vw + 145px);
     height: auto;
-    margin-top: calc(10.5vw + 25.54px) ;
-    margin-right: calc(38.6vw + 103.11px);
+    margin-right: calc(38.6vw + 103.11px); 
+    */
+    font-size: calc(2.7vw + 24.05px);
+    font-weight: 500; 
+    text-transform: uppercase;
     margin-bottom: calc(5.3vw + 22.77px);
     line-height: 117%;
-    font-size: calc(2.5vw + 25.73px);
-    font-weight: 600;
 }
 
 .aboutStudy img {
@@ -106,23 +111,23 @@ h2 {
     flex-wrap: wrap;
     margin-top: calc(5.3vw + 22.73px);
     margin-bottom: calc(1.3vw + 35.86px);
-    }
+}
 
-    .btitle,
-    .stitle,
-    .betitle,
-    .wtstitle {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 20px;
-        color: #222222;
-        width: calc(10.5vw + 285.54px);
-        font-size: calc(0.9vw + 14.89px);
-        line-height: 140%;
-        font-weight: 600;
-        margin-bottom: calc(1.1vw + 6.55px);
-       
-    }
+.btitle,
+.stitle,
+.betitle,
+.wtstitle {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    color: #222222;
+    width: calc(10.5vw + 285.54px);
+    font-size: calc(0.9vw + 14.89px);
+    line-height: 140%;
+    font-weight: 600;
+    margin-bottom: calc(1.1vw + 6.55px);
+
+}
 
 .bvalue,
 .svalue,
@@ -142,35 +147,40 @@ h2 {
     align-items: center;
     padding: calc(4.4vw + 23px) 0 calc(5.3vw + 20px);
 }
+
 .saleContainer h3 {
     color: white;
     font-size: calc(2vw + 26.5px);
     margin-bottom: calc(4.1vw + 4.7px);
 }
+
 .time {
     display: flex;
     gap: calc(2vw + 2px);
     margin-bottom: calc(4vw + 6px);
 }
+
 .date, .date2 {
     font-size: calc(12.6vw + 12.8px);
-    font-family: "chava", sans-serif;
+    font-family: "Chava", sans-serif;
 }
+
 .timeCard span {
     text-align: center;
     display: block;
     font-size: calc(1.9vw + 2.8px);
 }
 
-.promises h3{
+.promises h3 {
     width: calc(72.9vw + 88.89px);
     font-size: calc(2vw + 24px);
     text-align: left;
     text-transform: uppercase;
     line-height: calc(3.1vw + 28.26px);
-    font-weight: 500;  
+    font-weight: 500;
     margin-right: (12vw + 15.95px);
 }
+
 .studyProcess {
     display: flex;
     flex-wrap: wrap;
@@ -188,7 +198,7 @@ h2 {
 
 .infoContainer {
     display: flex;
-    gap: calc(20px + (51 - 20) * ((100vw - 375px) / (1280 - 375)));;
+    gap: calc(20px + (51 - 20) * ((100vw - 375px) / (1280 - 375)));
     flex-wrap: wrap;
 }
 
@@ -198,12 +208,12 @@ h2 {
 }
 
 .infoCard img {
-width: 100%;
+    width: 100%;
 }
 
 .infoBox {
     flex-basis: 300px;
-    flex-grow:3;
+    flex-grow: 3;
 }
 
 h4 {
@@ -230,3 +240,150 @@ h4 {
     font-size: calc(16px + (21 - 16) * ((100vw - 375px) / (1280 - 375)));
     line-height: 140%;
 }
+
+.diplomInfo {
+    display: flex;
+    gap: 19px;
+    flex-wrap: wrap;
+}
+
+.diplomImg {
+    flex-basis: 200px;
+    flex-grow: 1;
+}
+
+.diplomImg img{
+    width: 100%;
+}
+
+.diplomTxt h2 {
+    /* width: calc(48.7vw + 145px);
+     height: auto;
+     margin-right: calc(38.6vw + 103.11px); 
+     */
+     font-size: calc(2.5vw + 24px);
+     font-weight: 500; 
+     text-transform: uppercase;
+     line-height: 117%;
+ }
+.diplomTxt {
+    flex-basis: 200px;
+    flex-grow: 2;
+}
+
+.diplomTxt span {
+    font-size: calc(16px + (21 - 16) * ((100vw - 375px) / (1280 - 375)));
+    line-height: 140%;
+    width: calc(20.6vw + 250.92px);
+    margin: 20px;
+}
+
+.diplomInfo {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: 1fr;
+    row-gap: 19px;
+    column-gap: 10px;
+}
+
+  .salary {
+    margin-top: calc(10vw + 18.56px);
+  }
+
+   .salaryInfo h2 {
+    width: calc(44.3vw + 161.84px);
+    margin-bottom: calc(2.2vw + 11.71px);
+}
+
+.salaryInfo p {
+    width: calc(60.6vw + 100.92px);
+    margin-bottom: calc(1.8vw + 13.37px);
+}
+.salaryInfo img {
+width: calc(81.4vw + 22.61px);
+}
+
+
+.partners {
+    margin-top: calc(10vw + 18.56px);
+}
+
+.partners h2 {
+    width: calc(44.3vw + 161.84px);
+    margin-bottom: calc(2.2vw + 11.71px);
+}
+
+.wait {
+    display: flex;
+    
+    flex-wrap: wrap;
+}
+
+.waitImg {
+    flex-basis: 200px;
+    flex-grow: 1;
+}
+
+.waitImg img {
+    max-width: calc(18.8vw + 335.55px);
+    min-width: 100%;
+}
+
+.partnersInfo {
+    margin-top: calc(4vw + 9px);
+    width: calc(21.2vw + 248.44px);
+    flex-basis: 200px;
+    flex-grow: 3;
+}
+
+.partnersInfo span {
+    display: block;
+    margin: 25px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 600px) 
+{
+  
+.diplomInfo {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;   
+}  
+
+.diplomTxt h2 {
+    grid-row: 1;
+    grid-column: 1;
+  } 
+
+  .diplomTxt span {
+    grid-row: 3;
+    grid-column: 1;
+  }  
+ .diplomImg {
+    grid-row: 2;
+    grid-column: 1;
+   }
+  }
+
