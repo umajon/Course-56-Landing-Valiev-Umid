@@ -90,13 +90,17 @@ button.white .saleBtn {
     margin-top: calc(11vw + 18.56px);
 }
 
- .aboutStudy h2, .promises h2, .legendContainer h2, .salaryInfo h2, .partners h2 {
-   /* width: calc(48.7vw + 145px);
+.aboutStudy h2,
+.promises h2,
+.legendContainer h2,
+.salaryInfo h2,
+.partners h2, .frameBox h2 {
+    /* width: calc(48.7vw + 145px);
     height: auto;
     margin-right: calc(38.6vw + 103.11px); 
     */
     font-size: calc(2.7vw + 24.05px);
-    font-weight: 500; 
+    font-weight: 500;
     text-transform: uppercase;
     margin-bottom: calc(5.3vw + 22.77px);
     line-height: 117%;
@@ -160,7 +164,8 @@ button.white .saleBtn {
     margin-bottom: calc(4vw + 6px);
 }
 
-.date, .date2 {
+.date,
+.date2 {
     font-size: calc(12.6vw + 12.8px);
     font-family: "Chava", sans-serif;
 }
@@ -241,7 +246,7 @@ h4 {
     line-height: 140%;
 }
 
-.diplomInfo {
+.diplom {
     display: flex;
     gap: 19px;
     flex-wrap: wrap;
@@ -252,23 +257,24 @@ h4 {
     flex-grow: 1;
 }
 
-.diplomImg img{
+.diplomImg img {
     width: 100%;
 }
 
-.diplomTxt h2 {
-    /* width: calc(48.7vw + 145px);
-     height: auto;
-     margin-right: calc(38.6vw + 103.11px); 
-     */
-     font-size: calc(2.5vw + 24px);
-     font-weight: 500; 
-     text-transform: uppercase;
-     line-height: 117%;
- }
+.diplomTitle,
 .diplomTxt {
     flex-basis: 200px;
     flex-grow: 2;
+}
+
+.diplomTitle h2 {
+    height: calc(1.8vw + 113.37px);
+    /* margin-right: calc(38.6vw + 103.11px); 
+     */
+    font-size: calc(2.5vw + 24px);
+    font-weight: 500;
+    text-transform: uppercase;
+    line-height: 117%;
 }
 
 .diplomTxt span {
@@ -276,6 +282,7 @@ h4 {
     line-height: 140%;
     width: calc(20.6vw + 250.92px);
     margin: 20px;
+
 }
 
 .diplomInfo {
@@ -286,11 +293,11 @@ h4 {
     column-gap: 10px;
 }
 
-  .salary {
+.salary {
     margin-top: calc(10vw + 18.56px);
-  }
+}
 
-   .salaryInfo h2 {
+.salaryInfo h2 {
     width: calc(44.3vw + 161.84px);
     margin-bottom: calc(2.2vw + 11.71px);
 }
@@ -299,8 +306,9 @@ h4 {
     width: calc(60.6vw + 100.92px);
     margin-bottom: calc(1.8vw + 13.37px);
 }
+
 .salaryInfo img {
-width: calc(81.4vw + 22.61px);
+    width: calc(81.4vw + 22.61px);
 }
 
 
@@ -315,7 +323,7 @@ width: calc(81.4vw + 22.61px);
 
 .wait {
     display: flex;
-    
+
     flex-wrap: wrap;
 }
 
@@ -342,6 +350,67 @@ width: calc(81.4vw + 22.61px);
 }
 
 
+.frameBox {
+    border: 2px solid black;
+    padding:
+        calc(40px + (80 - 40) * ((100vw - 375px) / (1280 - 375)))
+    calc(20px + (52 - 20) * ((100vw - 375px) / (1280 - 375)))
+    calc(23px + (35 - 23) * ((100vw - 375px) / (1280 - 375)));
+    position:relative;
+}
+#corner {
+    width: calc(40px + (140 - 40) * ((100vw - 375px) / (1280 - 375)));
+    position: absolute;
+    top: -2px;
+    right: -2px;
+}
+
+
+.frameBox h2 {
+    margin: 0;
+}
+
+.lessons {
+    margin-top: calc(24px + (40 - 24) * ((100vw - 375px) / (1280 - 375)));
+    margin-bottom: calc(23px + (34 - 23) * ((100vw - 375px) / (1280 - 375)));
+    list-style-type: none;
+}
+
+.lessons li {
+    border-bottom: 1px solid #a1a1a1;
+    padding: 24px 0;
+}
+
+.lessons li:first-child {
+    padding-top: 0;
+}
+
+.frame button {
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 35px;
+}
+
+.mobile {
+    display: none !important;
+}
+
+@media  (max-width: 600px) {
+.mobile {
+    display: block !important;;
+}
+    .desktop {
+        display: none !important;
+    }
+
+    .frame button {
+        margin-top: 30px;
+    }
+    .lessons li:last-child {
+        border:0;
+        padding-bottom: 0;
+    }
+}
 
 
 
@@ -357,33 +426,25 @@ width: calc(81.4vw + 22.61px);
 
 
 
+@media (max-width: 600px) {
 
+    .diplomInfo {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
 
+    .diplomTxt h2 {
+        grid-row: 1;
+        grid-column: 1;
+    }
 
+    .diplomTxt span {
+        grid-row: 3;
+        grid-column: 1;
+    }
 
-
-
-@media (max-width: 600px) 
-{
-  
-.diplomInfo {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto auto;   
-}  
-
-.diplomTxt h2 {
-    grid-row: 1;
-    grid-column: 1;
-  } 
-
-  .diplomTxt span {
-    grid-row: 3;
-    grid-column: 1;
-  }  
- .diplomImg {
-    grid-row: 2;
-    grid-column: 1;
-   }
-  }
-
+    .diplom img {
+        grid-row: 2/3;
+        grid-column: 1;
+    }
+}
