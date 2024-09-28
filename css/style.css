@@ -11,7 +11,6 @@ body {
 section {
     padding: 0 calc(24px + (121 - 24) * ((100vw - 375px) / (1280 - 375)));
     margin-bottom: 0 calc(60px + (160 - 60) * ((100vw - 375px) / (1280 - 375)));
-    ;
 }
 
 section.hello {
@@ -95,11 +94,8 @@ button.white .saleBtn {
 .legendContainer h2,
 .salaryInfo h2,
 .partners h2,
-.frameBox h2 {
-    /* width: calc(48.7vw + 145px);
-    height: auto;
-    margin-right: calc(38.6vw + 103.11px); 
-    */
+.frameBox h2,
+.studentsComments h2 {
     font-size: calc(2.7vw + 24.05px);
     font-weight: 500;
     text-transform: uppercase;
@@ -379,6 +375,62 @@ h4 {
 .mobile {
     display: none !important;
 }
+
+.feedbacks {
+    display: flex;
+    flex-direction: row;
+    width: calc(0.8vw + 325px);
+    /* background: rgba(240, 247, 253, 1); */
+    background-color: aquamarine;
+    border-radius: 2%;
+   
+    }
+
+.feedback {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 51px calc(0.4vw + 15px) 40px auto;
+    
+}
+
+.feedbackText {
+    width: 295px;
+    font-size: 21px;
+
+
+}
+
+.feedbackText img {
+
+}
+
+.feedbackText p {
+    margin-top: 8px;
+}
+
+.FromStudent {
+    display: flex;
+    flex-direction: row;
+    width: 257px;
+}
+
+.studentInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 140%;
+    text-align: left;
+
+}
+
+.FromStudent img {
+    margin-right: 16px;
+    margin-top: auto;
+}
+
 
 @media (max-width: 600px) {
     .mobile {
