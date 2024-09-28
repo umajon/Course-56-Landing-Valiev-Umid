@@ -1,6 +1,8 @@
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
+    outline: 2px solid red;
 }
 
 body {
@@ -380,18 +382,16 @@ h4 {
     display: flex;
     flex-direction: row;
     width: calc(0.8vw + 325px);
-    /* background: rgba(240, 247, 253, 1); */
-    background-color: aquamarine;
+    background-color: rgba(240, 247, 253, 1);
     border-radius: 2%;
-   
-    }
+}
 
 .feedback {
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin: 51px calc(0.4vw + 15px) 40px auto;
-    
+
 }
 
 .feedbackText {
@@ -401,9 +401,7 @@ h4 {
 
 }
 
-.feedbackText img {
-
-}
+.feedbackText img {}
 
 .feedbackText p {
     margin-top: 8px;
@@ -432,10 +430,94 @@ h4 {
 }
 
 
+.wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.popUp {
+    background: #F0F7FD;
+    width: calc(54.4vw + 130px);
+    height: 80vh;
+    border-radius: 12px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    display: none;
+}
+
+.form {
+    width: 320px;
+}
+
+
+
+.form h4 {
+    text-transform: uppercase;
+    font-size: 26px;
+    text-align: center;
+}
+
+
+.form input {
+    display: block;
+    width: 100%;
+
+    border: 0;
+    border-bottom: 1px solid #A1A1A1;
+    outline: 0;
+    background: transparent;
+
+    font-size: 18px;
+    line-height: 27px;
+    padding: 10px 0;
+
+}
+
+
+.form button {
+    margin-top: 30px;
+}
+
+.thankYouPage {
+    background: #222222;
+    width: calc(54.4vw + 130px);
+    height: 80vh;
+    border-radius: 12px;
+
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    
+}
+
+.thankYouPage h2 {
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+
+
 @media (max-width: 600px) {
     .mobile {
         display: block !important;
-        ;
+        
     }
 
     .desktop {
