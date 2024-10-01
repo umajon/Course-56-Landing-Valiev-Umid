@@ -2,7 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    outline: 2px solid red;
+    /* outline: 2px solid red; */
 }
 
 body {
@@ -97,7 +97,10 @@ button.white .saleBtn {
 .salaryInfo h2,
 .partners h2,
 .frameBox h2,
-.studentsComments h2 {
+.studentsComments h2,
+.aboutUs h2,
+.ourGallery h2,
+.left-section h2  {
     font-size: calc(2.7vw + 24.05px);
     font-weight: 500;
     text-transform: uppercase;
@@ -511,7 +514,131 @@ h4 {
     text-transform: uppercase;
     margin-bottom: 10px;
 }
+.aboutUs {
+ display: flex;
+ flex-wrap: wrap;
+ flex-direction:column
+}
 
+
+.aboutUsInfo {
+   display: block;
+   flex-wrap: wrap;
+   width: 426px;
+   
+}
+
+.aboutUsInfo img {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.aboutUsInfo2 span {
+    display: block;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 461px;
+}
+
+
+
+.black {
+    background-color: rgba(34, 34, 34, 1);
+    color: white;
+
+}
+
+.container007 {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+}
+
+.left-section {
+    width: 50%;
+}
+
+.left-section h2 {
+    font-size: 3rem;
+    margin-top: 80px;
+    margin-bottom: 30px;
+    color: white;
+}
+
+.left-section ul {
+    list-style: none;
+}
+
+.left-section ul li {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+.right-section {
+    background-color: white;
+    color: black;
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+    width: 40%;
+   
+}
+
+.discount {
+    position: absolute;
+    top: -30px;
+    right: 340px;
+    background-color: purple;
+    color: white;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    
+}
+
+.right-section h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.right-section p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    width: 100%;
+    padding: 10px;
+    background-color: purple;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.contact-info {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+
+.swiper img {
+    width: 100%;
+}
 
 
 @media (max-width: 600px) {
@@ -556,4 +683,40 @@ h4 {
         width: 100%;
         justify-self: center;
     }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+    }
+
+    .left-section, .right-section {
+        width: 100%;
+    }
+
+    .left-section h1 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .left-section ul li {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .right-section {
+        padding: 15px;
+    }
+
+    .discount {
+        width: 50px;
+        height: 50px;
+        font-size: 1.2rem;
+    }
+
+    form input, form button {
+        font-size: 0.9rem;
+    }
+
+
 }
