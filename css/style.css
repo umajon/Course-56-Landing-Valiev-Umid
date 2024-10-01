@@ -151,7 +151,7 @@ button.white .saleBtn {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: calc(4.4vw + 23px) 0 calc(5.3vw + 20px);
+    
 }
 
 .saleContainer h3 {
@@ -269,11 +269,11 @@ h4 {
     font-weight: 500;
     text-transform: uppercase;
     line-height: 117%;
-    width: calc(27.6vw + 224.40px);
+    width: calc(20vw + 224px);
 }
 
 .diplom span {
-    width: calc(23vw + 250.92px);
+    width: calc(17.6vw + 250px);
     font-size: calc(1.9vw + 2.8px);
     font-weight: 400;
     line-height: 140%;
@@ -295,7 +295,7 @@ h4 {
 }
 
 .salaryInfo img {
-    width: calc(81.4vw + 22.61px);
+    width: calc(77.5vw + 23px);
 }
 
 
@@ -315,7 +315,7 @@ h4 {
 }
 
 .waitImg {
-    flex-basis: 200px;
+    flex-basis: 100px;
     flex-grow: 1;
 }
 
